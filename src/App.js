@@ -12,15 +12,26 @@ import {
 import NavBar from './component/navBar/NavBar';
 import LeftBar from './component/leftBar/LeftBar'; //change convention if won't work
 import RightBar from './component/rightBar/RightBar';
+import "./style.scss"
+import { useContext } from 'react';
+import { DarkModeContextProvider } from './context/darkModeContext';
+
+import { DarkModeContext } from "./context/darkModeContext";
+import { AuthContext } from './context/authContext';
+
+
 
 function App() {
 
   // const currentUser = false;
-  const currentUser = true;
+  const {currentUser} = useContext(AuthContext)
+
+  const {darkMode}=useContext(DarkModeContext)
+  
 
   const Layout = () => {
     return (
-      <div>
+      <div className={`theme-${darkMode ? "dark" : "light"}`}>
         <NavBar />
         <div style={{ display: "flex" }}>
           <LeftBar />
@@ -72,12 +83,12 @@ function App() {
     }
   ]);
   return (
+    // <DarkModeContextProvider>
     <div>
       <RouterProvider router={router} />
     </div>
+    // </DarkModeContextProvider>
   );
 }
-
-// 23:37
 
 export default App;
