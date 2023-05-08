@@ -40,7 +40,7 @@ const NavBar = () => {
         <NotificationsOutlinedIcon/>
         <div className="user">
           <img 
-          src={dp}/>   //take from auth context
+          src={dp}/>  {/* take from auth context */}
           <span>{currentUser.name}</span>
 
         </div>

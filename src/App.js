@@ -1,5 +1,5 @@
+//2:02
 import Login from './pages/login/Login';
-
 import Register from './pages/register/Register';
 import Home from './pages/home/Home';
 import Profile from './pages/profile/Profile';
@@ -14,7 +14,7 @@ import LeftBar from './component/leftBar/LeftBar'; //change convention if won't 
 import RightBar from './component/rightBar/RightBar';
 import "./style.scss"
 import { useContext } from 'react';
-import { DarkModeContextProvider } from './context/darkModeContext';
+// import { DarkModeContextProvider } from './context/darkModeContext';
 
 import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from './context/authContext';

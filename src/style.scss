@@ -8,7 +8,7 @@ $themes: (
         bg: white,
         logo: darkblue,
         bgsoft: #f6f3f3,
-        textColorsoft: #555,
+        textColorSoft: #555,
         border: lightgrey,
     ),
     dark:(
@@ -52,8 +52,8 @@ $themes: (
     }
 }
 
-@mixin tablet {
-    @media (max-width: 960px) {
-        @content;
-    }
-}
+// @mixin tablet {
+//     @media (max-width: 960px) {
+//         @content;
+//     }
+// }

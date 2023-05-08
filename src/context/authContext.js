@@ -25,7 +25,7 @@
 //Copied function
 
 import { createContext, useEffect, useState } from "react";
-// import dp from "./dp.jpg"
+import dp from "./dp.jpg"
 
 export const AuthContext = createContext();
 
@@ -40,7 +40,8 @@ export const AuthContextProvider = ({ children }) => {
       id: 1,
       name: "Adil Khan",
       profilePic:
-        "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        "https://media.licdn.com/dms/image/D4D03AQEzfj1xfMN8ZQ/profile-displayphoto-shrink_800_800/0/1664542995288?e=1687996800&v=beta&t=sVOuB2yB2u_qlfuMiqcXqZLt3FtlKcFraNdFbXEfpQY"
+        // "https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg?auto=compress&cs=tinysrgb&w=1600",
     });
   };
 
